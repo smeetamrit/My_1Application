@@ -1,27 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:gravity="center">
 
+    <!-- TextView -->
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Amrit kaur"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
 
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button -->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="361dp"
-        tools:layout_editor_absoluteY="896dp" />
+        android:text="Change TextView"
+        android:layout_marginBottom="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check me"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Switch -->
+    <Switch
+        android:id="@+id/switchToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Switch"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Radio Button -->
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Me"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageButton -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:contentDescription="Image Button" />
+
+</LinearLayout>
+</ScrollView>
